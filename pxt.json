@@ -1,0 +1,18 @@
+{
+    "name": "I2C-LCD",
+    "version": "0.1",
+    "description": "I2C LCD block for micro:bit Makecode",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*"
+    },
+    "files": [
+        "README.md",
+        "main.ts",
+        "base.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": true
+}

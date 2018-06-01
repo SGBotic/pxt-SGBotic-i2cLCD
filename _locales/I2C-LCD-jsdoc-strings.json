@@ -1,0 +1,16 @@
+{
+  "SGBotic": "SGBotic blocks\n\nI2C LCD package for microbit Makecode.\nThis package is based on library by microbit-makecode-packages",
+  "SGBotic.BacklightCtrl": "Enable/disable LCD backlight",
+  "SGBotic.Cursor": "Enable/disable LCD cursor",
+  "SGBotic.ShowNumber": "Print number from position defined by row and column.\nDecimal numbers are not supported.",
+  "SGBotic.ShowNumber|param|COL": "is LCD column position, [0 - 15], eg: 0",
+  "SGBotic.ShowNumber|param|ROW": "is LCD row position, [0 - 1], eg: 0",
+  "SGBotic.ShowNumber|param|n": "is number to be printed, eg: 10, 100, 200",
+  "SGBotic.ShowString": "Print string from position defined by row and column.",
+  "SGBotic.ShowString|param|COL": "is LCD column position, [0 - 15]",
+  "SGBotic.ShowString|param|ROW": "is LCD row position, [0 - 1]",
+  "SGBotic.ShowString|param|s": "is string to be printed, eg: \"Hello\"",
+  "SGBotic.clear": "Clear display",
+  "SGBotic.home": "Move cursor to row 0 and column 0",
+  "SGBotic.initLCD": "Configure LCD and set the I2C address"
+}

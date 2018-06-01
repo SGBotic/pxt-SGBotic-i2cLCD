@@ -1,0 +1,15 @@
+{
+  "SGBotic.BacklightCtrl|block": "Backlight %blight",
+  "SGBotic.Cursor|block": "Cursor %blight",
+  "SGBotic.I2C_ADDR.addr1|block": "39",
+  "SGBotic.I2C_ADDR.addr2|block": "63",
+  "SGBotic.ShowNumber|block": "Print number %n|from Row %ROW|Column %COL",
+  "SGBotic.ShowString|block": "Print string %s|from Row %ROW|Column %COL",
+  "SGBotic.clear|block": "Clear display",
+  "SGBotic.ctrlStat.Off|block": "Off",
+  "SGBotic.ctrlStat.On|block": "On",
+  "SGBotic.home|block": "Cursor home",
+  "SGBotic.initLCD|block": "Initialize LCD at address %addr",
+  "SGBotic|block": "SGBotic",
+  "{id:category}SGBotic": "SGBotic"
+}

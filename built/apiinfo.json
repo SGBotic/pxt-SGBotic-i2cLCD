@@ -1,0 +1,450 @@
+{
+ "byQName": {
+  "SGBotic": {
+   "kind": 5,
+   "namespace": "",
+   "name": "SGBotic",
+   "attributes": {
+    "paramDefl": {},
+    "callingConvention": 0,
+    "_source": null,
+    "weight": 100,
+    "color": "#f47820",
+    "icon": "",
+    "paramHelp": {},
+    "jsDoc": "SGBotic blocks\n\nI2C LCD package for microbit Makecode.\nThis package is based on library by microbit-makecode-packages",
+    "block": "SGBotic"
+   },
+   "pkg": null,
+   "retType": "",
+   "parameters": null,
+   "qName": "SGBotic"
+  },
+  "item": {
+   "kind": 4,
+   "namespace": "",
+   "name": "item",
+   "attributes": {
+    "paramDefl": {},
+    "callingConvention": 0,
+    "_source": null,
+    "paramHelp": {},
+    "jsDoc": "",
+    "_name": "item"
+   },
+   "pkg": null,
+   "retType": "number",
+   "parameters": null,
+   "qName": "item"
+  },
+  "SGBotic.I2C_ADDR": {
+   "kind": 6,
+   "namespace": "SGBotic",
+   "name": "I2C_ADDR",
+   "attributes": {
+    "paramDefl": {},
+    "callingConvention": 0,
+    "_source": null,
+    "paramHelp": {},
+    "jsDoc": "",
+    "_name": "I2C_ADDR"
+   },
+   "pkg": null,
+   "retType": "SGBotic.I2C_ADDR",
+   "parameters": null,
+   "qName": "SGBotic.I2C_ADDR"
+  },
+  "SGBotic.I2C_ADDR.addr1": {
+   "kind": 7,
+   "namespace": "SGBotic.I2C_ADDR",
+   "name": "addr1",
+   "attributes": {
+    "paramDefl": {},
+    "callingConvention": 0,
+    "_source": null,
+    "block": "39",
+    "paramHelp": {},
+    "jsDoc": "",
+    "_name": "addr1"
+   },
+   "pkg": null,
+   "retType": "SGBotic.I2C_ADDR",
+   "parameters": null,
+   "qName": "SGBotic.I2C_ADDR.addr1"
+  },
+  "SGBotic.I2C_ADDR.addr2": {
+   "kind": 7,
+   "namespace": "SGBotic.I2C_ADDR",
+   "name": "addr2",
+   "attributes": {
+    "paramDefl": {},
+    "callingConvention": 0,
+    "_source": null,
+    "block": "63",
+    "paramHelp": {},
+    "jsDoc": "",
+    "_name": "addr2"
+   },
+   "pkg": null,
+   "retType": "SGBotic.I2C_ADDR",
+   "parameters": null,
+   "qName": "SGBotic.I2C_ADDR.addr2"
+  },
+  "SGBotic.ctrlStat": {
+   "kind": 6,
+   "namespace": "SGBotic",
+   "name": "ctrlStat",
+   "attributes": {
+    "paramDefl": {},
+    "callingConvention": 0,
+    "_source": null,
+    "paramHelp": {},
+    "jsDoc": "",
+    "_name": "ctrlStat"
+   },
+   "pkg": null,
+   "retType": "SGBotic.ctrlStat",
+   "parameters": null,
+   "qName": "SGBotic.ctrlStat"
+  },
+  "SGBotic.ctrlStat.On": {
+   "kind": 7,
+   "namespace": "SGBotic.ctrlStat",
+   "name": "On",
+   "attributes": {
+    "paramDefl": {},
+    "callingConvention": 0,
+    "_source": null,
+    "block": "On",
+    "paramHelp": {},
+    "jsDoc": "",
+    "_name": "On"
+   },
+   "pkg": null,
+   "retType": "SGBotic.ctrlStat",
+   "parameters": null,
+   "qName": "SGBotic.ctrlStat.On"
+  },
+  "SGBotic.ctrlStat.Off": {
+   "kind": 7,
+   "namespace": "SGBotic.ctrlStat",
+   "name": "Off",
+   "attributes": {
+    "paramDefl": {},
+    "callingConvention": 0,
+    "_source": null,
+    "block": "Off",
+    "paramHelp": {},
+    "jsDoc": "",
+    "_name": "Off"
+   },
+   "pkg": null,
+   "retType": "SGBotic.ctrlStat",
+   "parameters": null,
+   "qName": "SGBotic.ctrlStat.Off"
+  },
+  "SGBotic.initLCD": {
+   "kind": 3,
+   "namespace": "SGBotic",
+   "name": "initLCD",
+   "attributes": {
+    "paramDefl": {},
+    "callingConvention": 0,
+    "_source": null,
+    "subcategory": "I2C-LCD",
+    "blockId": "I2C_INIT_LCD",
+    "block": "Initialize LCD at address %addr",
+    "weight": 100,
+    "blockGap": "8",
+    "paramHelp": {
+     "Select": "I2C address"
+    },
+    "jsDoc": "Configure LCD and set the I2C address",
+    "_name": "initLCD"
+   },
+   "pkg": null,
+   "retType": "void",
+   "parameters": [
+    {
+     "name": "addr",
+     "description": "",
+     "type": "SGBotic.I2C_ADDR",
+     "options": {},
+     "isEnum": true
+    }
+   ],
+   "snippet": "initLCD(null)",
+   "qName": "SGBotic.initLCD"
+  },
+  "SGBotic.ShowNumber": {
+   "kind": 3,
+   "namespace": "SGBotic",
+   "name": "ShowNumber",
+   "attributes": {
+    "paramDefl": {
+     "n": "10",
+     "COL": "0",
+     "ROW": "0"
+    },
+    "callingConvention": 0,
+    "_source": null,
+    "subcategory": "I2C-LCD",
+    "blockId": "I2C_LCD_SHOW_NUMBER",
+    "block": "Print number %n|from Row %ROW|Column %COL",
+    "weight": 90,
+    "blockGap": "8",
+    "paramMin": {
+     "COL": "0",
+     "ROW": "0"
+    },
+    "paramMax": {
+     "COL": "15",
+     "ROW": "1"
+    },
+    "paramHelp": {
+     "n": "is number to be printed, eg: 10, 100, 200",
+     "COL": "is LCD column position, [0 - 15], eg: 0",
+     "ROW": "is LCD row position, [0 - 1], eg: 0"
+    },
+    "jsDoc": "Print number from position defined by row and column.\nDecimal numbers are not supported.",
+    "_name": "ShowNumber"
+   },
+   "pkg": null,
+   "retType": "void",
+   "parameters": [
+    {
+     "name": "n",
+     "description": "is number to be printed, eg: 10, 100, 200",
+     "type": "number",
+     "initializer": "10",
+     "default": "10",
+     "options": {},
+     "isEnum": false
+    },
+    {
+     "name": "ROW",
+     "description": "is LCD row position, [0 - 1], eg: 0",
+     "type": "number",
+     "initializer": "0",
+     "default": "0",
+     "options": {
+      "min": {
+       "value": "0"
+      },
+      "max": {
+       "value": "1"
+      }
+     },
+     "isEnum": false
+    },
+    {
+     "name": "COL",
+     "description": "is LCD column position, [0 - 15], eg: 0",
+     "type": "number",
+     "initializer": "0",
+     "default": "0",
+     "options": {
+      "min": {
+       "value": "0"
+      },
+      "max": {
+       "value": "15"
+      }
+     },
+     "isEnum": false
+    }
+   ],
+   "snippet": "ShowNumber(10, 0, 0)",
+   "qName": "SGBotic.ShowNumber"
+  },
+  "SGBotic.ShowString": {
+   "kind": 3,
+   "namespace": "SGBotic",
+   "name": "ShowString",
+   "attributes": {
+    "paramDefl": {
+     "s": "Hello"
+    },
+    "callingConvention": 0,
+    "_source": null,
+    "subcategory": "I2C-LCD",
+    "blockId": "I2C_LCD_SHOW_STRING",
+    "block": "Print string %s|from Row %ROW|Column %COL",
+    "weight": 90,
+    "blockGap": "8",
+    "paramMin": {
+     "COL": "0",
+     "ROW": "0"
+    },
+    "paramMax": {
+     "COL": "15",
+     "ROW": "1"
+    },
+    "paramHelp": {
+     "s": "is string to be printed, eg: \"Hello\"",
+     "COL": "is LCD column position, [0 - 15]",
+     "ROW": "is LCD row position, [0 - 1]"
+    },
+    "jsDoc": "Print string from position defined by row and column.",
+    "_name": "ShowString"
+   },
+   "pkg": null,
+   "retType": "void",
+   "parameters": [
+    {
+     "name": "s",
+     "description": "is string to be printed, eg: \"Hello\"",
+     "type": "string",
+     "initializer": "Hello",
+     "default": "Hello",
+     "options": {},
+     "isEnum": false
+    },
+    {
+     "name": "ROW",
+     "description": "is LCD row position, [0 - 1]",
+     "type": "number",
+     "options": {
+      "min": {
+       "value": "0"
+      },
+      "max": {
+       "value": "1"
+      }
+     },
+     "isEnum": false
+    },
+    {
+     "name": "COL",
+     "description": "is LCD column position, [0 - 15]",
+     "type": "number",
+     "options": {
+      "min": {
+       "value": "0"
+      },
+      "max": {
+       "value": "15"
+      }
+     },
+     "isEnum": false
+    }
+   ],
+   "snippet": "ShowString(\"Hello\", 0, 0)",
+   "qName": "SGBotic.ShowString"
+  },
+  "SGBotic.clear": {
+   "kind": 3,
+   "namespace": "SGBotic",
+   "name": "clear",
+   "attributes": {
+    "paramDefl": {},
+    "callingConvention": 0,
+    "_source": null,
+    "subcategory": "I2C-LCD",
+    "blockId": "I2C_LCD_CLEAR",
+    "block": "Clear display",
+    "weight": 85,
+    "blockGap": "8",
+    "paramHelp": {},
+    "jsDoc": "Clear display",
+    "_name": "clear"
+   },
+   "pkg": null,
+   "retType": "void",
+   "parameters": [],
+   "snippet": "clear()",
+   "qName": "SGBotic.clear"
+  },
+  "SGBotic.BacklightCtrl": {
+   "kind": 3,
+   "namespace": "SGBotic",
+   "name": "BacklightCtrl",
+   "attributes": {
+    "paramDefl": {},
+    "callingConvention": 0,
+    "_source": null,
+    "subcategory": "I2C-LCD",
+    "blockId": "I2C_LCD_BACKLIGHT",
+    "block": "Backlight %blight",
+    "weight": 71,
+    "blockGap": "8",
+    "paramHelp": {
+     "LCD": "backlight On/Off"
+    },
+    "jsDoc": "Enable/disable LCD backlight",
+    "_name": "BacklightCtrl"
+   },
+   "pkg": null,
+   "retType": "void",
+   "parameters": [
+    {
+     "name": "blight",
+     "description": "",
+     "type": "SGBotic.ctrlStat",
+     "options": {},
+     "isEnum": true
+    }
+   ],
+   "snippet": "BacklightCtrl(null)",
+   "qName": "SGBotic.BacklightCtrl"
+  },
+  "SGBotic.Cursor": {
+   "kind": 3,
+   "namespace": "SGBotic",
+   "name": "Cursor",
+   "attributes": {
+    "paramDefl": {},
+    "callingConvention": 0,
+    "_source": null,
+    "subcategory": "I2C-LCD",
+    "blockId": "I2C_LCD_CURSOR",
+    "block": "Cursor %blight",
+    "weight": 70,
+    "blockGap": "8",
+    "paramHelp": {
+     "LCD": "cursor On/Off"
+    },
+    "jsDoc": "Enable/disable LCD cursor",
+    "_name": "Cursor"
+   },
+   "pkg": null,
+   "retType": "void",
+   "parameters": [
+    {
+     "name": "bcursor",
+     "description": "",
+     "type": "SGBotic.ctrlStat",
+     "options": {},
+     "isEnum": true
+    }
+   ],
+   "snippet": "Cursor(null)",
+   "qName": "SGBotic.Cursor"
+  },
+  "SGBotic.home": {
+   "kind": 3,
+   "namespace": "SGBotic",
+   "name": "home",
+   "attributes": {
+    "paramDefl": {},
+    "callingConvention": 0,
+    "_source": null,
+    "subcategory": "I2C-LCD",
+    "blockId": "I2C_LCD_HOME",
+    "block": "Cursor home",
+    "weight": 69,
+    "blockGap": "8",
+    "paramHelp": {
+     "Return": "cursor to row 0 and column 0"
+    },
+    "jsDoc": "Move cursor to row 0 and column 0",
+    "_name": "home"
+   },
+   "pkg": null,
+   "retType": "void",
+   "parameters": [],
+   "snippet": "home()",
+   "qName": "SGBotic.home"
+  }
+ }
+}
