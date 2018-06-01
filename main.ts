@@ -123,7 +123,7 @@ namespace SGBotic {
     }
 
     /**
-     * Clear display. Cursor return to row 0, column 0
+     * Clear display. Cursor returns to row 0, column 0
      */
     //% subcategory=I2C-LCD 
     //% blockId="I2C_LCD_CLEAR" block="Clear display"
